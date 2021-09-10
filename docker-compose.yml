@@ -1,0 +1,17 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  sagan-site:
+    build:
+      context: .
+      target: site-dev
+    ports:
+      - "8080:8080"
+    environment:
+      - RENDERER_URL=http://sagan-renderer:8081/
+  sagan-renderer:
+    build:
+      context: .
+      target: renderer-dev
+    environment:
+      - PORT=8081
+
