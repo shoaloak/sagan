@@ -44,6 +44,8 @@ sagan:
       # See http://developer.github.com/v3/orgs/teams/#list-teams
       org: spring-io
       team: spring-team
+    renderer:
+      service-url: ${RENDERER_URL:http://localhost:8081/}
 ---
 
 spring:

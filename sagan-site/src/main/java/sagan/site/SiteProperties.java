@@ -87,7 +87,7 @@ public class SiteProperties {
 		 * Remote service for rendering text markup as HTML content
 		 * and fetching guides content.
 		 */
-		private String serviceUrl = "http://localhost:8081";
+		private String serviceUrl;
 
 		public String getServiceUrl() {
 			return this.serviceUrl;
